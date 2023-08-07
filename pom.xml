@@ -15,6 +15,10 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
+		<graphql-java.version>5.0.2</graphql-java.version>
+		 <graphql-java-tools.version>5.2.4</graphql-java-tools.version>
+		 <graphql-java-annotations.version>3.0.3</graphql-java-annotations.version>
+		 <ratpack-core.version>1.4.6</ratpack-core.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -29,6 +33,23 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-graphql</artifactId>
 		</dependency>
+
+		<dependency>
+		   <groupId>com.graphql-java</groupId>
+		   <artifactId>graphql-spring-boot-starter</artifactId>
+		   <version>${graphql-java.version}</version>
+		</dependency>
+		<dependency>
+		   <groupId>com.graphql-java</groupId>
+		   <artifactId>graphql-java-tools</artifactId>
+		   <version>${graphql-java-tools.version}</version>
+		</dependency>
+		<dependency>
+		   <groupId>com.graphql-java</groupId>
+		   <artifactId>graphql-java-annotations</artifactId>
+		   <version>${graphql-java-annotations.version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -67,6 +88,15 @@
 			<groupId>org.springframework.graphql</groupId>
 			<artifactId>spring-graphql-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 
